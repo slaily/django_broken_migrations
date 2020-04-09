@@ -4,6 +4,10 @@ from django.db import models
 class Speaker(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
+    full_name = models.CharField(
+        max_length=254,
+        unique=True
+    )
     email = models.EmailField(max_length=254, unique=True)
 
     class Meta:
