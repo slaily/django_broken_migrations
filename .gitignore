@@ -16,5 +16,8 @@ nosetests.xml
 coverage.xml
 
 .env
-.venv
 db.sqlite3
+
+# Virtual environments
+env/
+venv/
